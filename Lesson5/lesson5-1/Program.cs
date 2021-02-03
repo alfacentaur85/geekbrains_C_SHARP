@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace lesson5_1
+namespace WriteAnySymbolsToFile
 {
     class Program
     {

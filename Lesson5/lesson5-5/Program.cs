@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Text.Json;
 
-namespace lesson5_5
+namespace TaskList
 {
     class Program
     {
@@ -17,7 +17,6 @@ namespace lesson5_5
         static void Main(string[] args)
         {
             Task();
-
         }
 
         static void Task()

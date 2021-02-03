@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace lesson5_4
+namespace WriteDirsFilesTreeToFile
 {
     class Program
     {

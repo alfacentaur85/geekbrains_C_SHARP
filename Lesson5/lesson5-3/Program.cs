@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace lesson5_3
+namespace WriteByteArrayToFile
 {
     class Program
     {

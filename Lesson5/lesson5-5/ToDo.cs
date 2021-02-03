@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace lesson5_5
+namespace TaskList
 {
     public class ToDo
     {
