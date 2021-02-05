@@ -7,6 +7,11 @@ namespace TaskManager
 {
     public class MyTaskManager
     {
+        public MyTaskManager()
+        {
+            this.TaskManager(this);
+        }
+
         public void GetAndOutputProcessList()
         {
             try
@@ -32,7 +37,7 @@ namespace TaskManager
             string inputStr = Console.ReadLine();
             try
             {
-                return  Convert.ToInt32(inputStr);
+                return   Math.Abs(Convert.ToInt32(inputStr));
             }
             catch 
             {
@@ -56,5 +61,28 @@ namespace TaskManager
                 Console.WriteLine("Что-то пошло не так. Попробуйте ещё раз.");
             }
         }
+
+        public void TaskManager(MyTaskManager myTaskManager)
+        {
+            myTaskManager.GetAndOutputProcessList();
+            int id;
+            do
+            {
+                id = myTaskManager.GetIdProcessToKill();
+                switch (id)
+                {
+                    case -2:
+                        Console.WriteLine("Вы ввели некорректный ID. Поторите попытку");
+                        break;
+                    case -1:
+                        break;
+                    default:
+                        myTaskManager.TaskKill(id);
+                        break;
+                }
+            }
+            while (id != -1);
+        }
+
     }
 }
